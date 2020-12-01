@@ -1,0 +1,45 @@
+html, body, div, canvas {
+  margin: 0;
+  padding: 0;
+}
+body{
+  width: 100%;
+  background-color: #333744;
+  margin: 24px;
+}
+
+.login-screen {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #333744;
+}
+
+.login-screen__input {
+  margin-left: 10%;
+  margin-top: 20%;
+  width: 75%;
+  height: 20%;
+  font-size: 300%;
+  letter-spacing: 3px;
+  text-align: center;
+  z-index: 2;
+}
+.side-info{
+  text-align: center;
+  height: 100vh;
+  color: white;
+  padding-right: 24px;
+  background: #333744;
+width: 280px;
+position: fixed; /* Stay in place */
+z-index: 1; /* Stay on top */
+top: 0; /* Stay at the top */
+  right: 0;
+  border-left: steelblue 2px solid;
+  overflow: scroll;
+}
+#game-board{
+  border: gray 2px solid;
+  box-shadow: 5px 10px #888888
+}

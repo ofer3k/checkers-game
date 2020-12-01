@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Checkers</title>
+    <link rel='stylesheet' href='checkers.css'>
+  </head>
+  <body>
+    <div class='login-screen'>
+      <input id="nameInput" class='login-screen__input' type='text' readonly placeholder='Enter a username'>
+    </div>
+    <canvas id="game-board" class="game-canvas" height="600" width="600"></canvas>
+    <div id="side-info" class="side-info">
+      <h1>Game rules:</h1>
+      <p>
+        1.Each player in turn will advance one of his soldiers towards his opponent in diagonal jumps.
+      </p>
+      <p>
+        2.The player may promote a soldier to an empty box or to make an "eating" move and remove opponent's soldier from the game
+      </p>
+      <p>
+        3.When eating, the soldier will jump over his opponent's player and land on an empty square following one of the diagonals. There is a possibility to perform double and triple eating if after performing the first meal the soldier is in the same condition as where he started the move (free to eat)
+      </p>
+      <p>
+        4.A soldier who reached the last row in the field which is deep in the opponent's territory will be proclaimed "king" and will now be able to take steps like the rest of the soldiers but also backwards.
+      </p>
+      <p>
+        5.A winner is announced when one of the players eats the last soldier of his opponent
+      </p>
+      <h2>
+        Happy hunger games and may the odds be ever in your favor
+      </h2>
+
+    </div>
+
+    <script src="./jquery-3.2.1.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/client.js"></script>
+    <script src='/draw-game.js'></script>
+  </body>
+</html>
